@@ -2,6 +2,7 @@ package com.example.demo.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -44,8 +45,11 @@ public class AuthController {
 
     // REGISTER (only admin)
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
+    public ResponseEntity<String> register(@RequestBody RegisterRequest request,@AuthenticationPrincipal User currentUser) {
         // userRepository.existsByUsername/email
+        if (!currentUser.getRole().equals(Role.ADMIN)) {
+        return ResponseEntity.status(403).body("Only admins can register new users");
+    }
         if (userRepository.existsByUsername(request.getUsername())) {
             return ResponseEntity.badRequest().body("Username already exists");
         }
