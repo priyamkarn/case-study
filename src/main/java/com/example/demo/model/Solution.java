@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,8 @@ public class Solution {
     private Long id;
 
     @ManyToOne
+    @JsonIgnore  // Prevents circular reference
+
     private Assignment assignment;
 
     @ManyToOne

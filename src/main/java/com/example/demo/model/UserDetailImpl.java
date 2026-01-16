@@ -10,16 +10,24 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class UserDetailImpl implements UserDetails {
     private final User user;
+    
     public UserDetailImpl(User user) {
         this.user = user;
     }
+    
+    // Add this getter
+    public User getUser() {
+        return user;
+    }
+    
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities(){
-       Set<GrantedAuthority> authorities=new HashSet<>();
-       authorities.add(new SimpleGrantedAuthority("ROLE_" + user.getRole()));
-       return authorities;
+        Set<GrantedAuthority> authorities = new HashSet<>();
+        authorities.add(new SimpleGrantedAuthority("ROLE_" + user.getRole()));
+        return authorities;
     }
-     @Override
+    
+    @Override
     public String getPassword() {
         return user.getPassword();
     }
@@ -27,5 +35,25 @@ public class UserDetailImpl implements UserDetails {
     @Override
     public String getUsername() {
         return user.getUsername();
+    }
+    
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 }

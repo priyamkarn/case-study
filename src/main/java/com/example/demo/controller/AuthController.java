@@ -14,6 +14,7 @@ import com.example.demo.dto.AuthResponse;
 import com.example.demo.dto.RegisterRequest;
 import com.example.demo.model.Role;
 import com.example.demo.model.User;
+import com.example.demo.model.UserDetailImpl;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.security.JwtUtil;
 
@@ -44,26 +45,40 @@ public class AuthController {
     }
 
     // REGISTER (only admin)
-    @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterRequest request,@AuthenticationPrincipal User currentUser) {
-        // userRepository.existsByUsername/email
-        if (!currentUser.getRole().equals(Role.ADMIN)) {
+  @PostMapping("/register")
+public ResponseEntity<String> register(
+        @RequestBody RegisterRequest request,
+        @AuthenticationPrincipal UserDetailImpl currentUserDetails) {
+    
+    // Check if user is authenticated
+    if (currentUserDetails == null) {
+        return ResponseEntity.status(401).body("Authentication required");
+    }
+    
+    // Get the actual User entity
+    User currentUser = currentUserDetails.getUser();
+    
+    // Check if user is admin
+    if (!currentUser.getRole().equals(Role.ADMIN)) {
         return ResponseEntity.status(403).body("Only admins can register new users");
     }
-        if (userRepository.existsByUsername(request.getUsername())) {
-            return ResponseEntity.badRequest().body("Username already exists");
-        }
-        if (userRepository.existsByEmail(request.getEmail())) {
-            return ResponseEntity.badRequest().body("Email already exists");
-        }
-
-        User user = new User();
-        user.setUsername(request.getUsername());
-        user.setEmail(request.getEmail());
-        user.setPassword(passwordEncoder.encode(request.getPassword()));
-        user.setRole(request.getRole() != null ? request.getRole() : Role.STUDENT); 
-
-        userRepository.save(user);
-        return ResponseEntity.ok("User registered successfully by admin");
+    
+    // Check for existing username/email
+    if (userRepository.existsByUsername(request.getUsername())) {
+        return ResponseEntity.badRequest().body("Username already exists");
     }
+    if (userRepository.existsByEmail(request.getEmail())) {
+        return ResponseEntity.badRequest().body("Email already exists");
+    }
+
+    // Create and save user
+    User user = new User();
+    user.setUsername(request.getUsername());
+    user.setEmail(request.getEmail());
+    user.setPassword(passwordEncoder.encode(request.getPassword()));
+    user.setRole(request.getRole() != null ? request.getRole() : Role.STUDENT); 
+
+    userRepository.save(user);
+    return ResponseEntity.ok("User registered successfully by admin");
+}
 }
