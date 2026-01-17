@@ -1,0 +1,3 @@
+2026-01-18 04:34:39.747 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-18 04:35:34.468 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/login
+2026-01-18 04:35:34.580 [http-nio-8080-exec-2] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/login - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-17T23:05:34Z, a difference of 44385579 milliseconds.  Allowed clock skew: 0 milliseconds.
