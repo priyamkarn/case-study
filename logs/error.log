@@ -1,3 +1,6 @@
 2026-01-18 05:07:11.471 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'
 2026-01-18 05:09:04.669 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'
 2026-01-18 05:10:52.373 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'
+2026-01-18 05:14:18.667 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'
+2026-01-18 05:18:43.457 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'
+2026-01-18 22:59:08.677 [main] ERROR c.e.d.service.UserDetailsServiceImpl - User not found: 'nonexistent'

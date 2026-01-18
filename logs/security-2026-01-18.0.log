@@ -1,0 +1,41 @@
+2026-01-18 04:34:39.747 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-18 04:35:34.468 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/login
+2026-01-18 04:35:34.580 [http-nio-8080-exec-2] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/login - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-17T23:05:34Z, a difference of 44385579 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-18 05:14:33.562 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-18 22:51:51.262 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-18 22:53:05.818 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/login
+2026-01-18 22:53:05.888 [http-nio-8080-exec-2] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/login - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-18T17:23:05Z, a difference of 110236887 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-18 22:55:02.342 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/register
+2026-01-18 22:55:02.345 [http-nio-8080-exec-5] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/register - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-18T17:25:02Z, a difference of 110353345 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-18 22:55:20.287 [http-nio-8080-exec-6] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/register
+2026-01-18 22:55:20.289 [http-nio-8080-exec-6] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/register - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-18T17:25:20Z, a difference of 110371289 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-18 22:55:22.146 [http-nio-8080-exec-7] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/register
+2026-01-18 22:55:22.149 [http-nio-8080-exec-7] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: POST /auth/register - JWT expired at 2026-01-17T10:45:49Z. Current time: 2026-01-18T17:25:22Z, a difference of 110373148 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-18 22:55:49.725 [http-nio-8080-exec-8] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/register
+2026-01-18 22:55:49.728 [http-nio-8080-exec-8] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:55:49.728 [http-nio-8080-exec-8] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:55:49.736 [http-nio-8080-exec-8] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: POST /auth/register with authorities: [ROLE_ADMIN]
+2026-01-18 22:55:58.307 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /auth/register
+2026-01-18 22:55:58.309 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:55:58.310 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:55:58.317 [http-nio-8080-exec-9] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: POST /auth/register with authorities: [ROLE_ADMIN]
+2026-01-18 22:56:50.257 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /assignments/create
+2026-01-18 22:56:50.260 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:56:50.261 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:56:50.267 [http-nio-8080-exec-1] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: POST /assignments/create with authorities: [ROLE_ADMIN]
+2026-01-18 22:57:06.865 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /assignments/all
+2026-01-18 22:57:06.867 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:57:06.867 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:57:06.874 [http-nio-8080-exec-2] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /assignments/all with authorities: [ROLE_ADMIN]
+2026-01-18 22:57:47.182 [http-nio-8080-exec-3] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /assignments/mark
+2026-01-18 22:57:47.184 [http-nio-8080-exec-3] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:57:47.185 [http-nio-8080-exec-3] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:57:47.191 [http-nio-8080-exec-3] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: POST /assignments/mark with authorities: [ROLE_ADMIN]
+2026-01-18 22:57:53.375 [http-nio-8080-exec-4] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: POST /assignments/all
+2026-01-18 22:57:53.376 [http-nio-8080-exec-4] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:57:53.378 [http-nio-8080-exec-4] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:57:53.385 [http-nio-8080-exec-4] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: POST /assignments/all with authorities: [ROLE_ADMIN]
+2026-01-18 22:57:59.351 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /assignments/all
+2026-01-18 22:57:59.352 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-18 22:57:59.352 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-18 22:57:59.358 [http-nio-8080-exec-5] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /assignments/all with authorities: [ROLE_ADMIN]

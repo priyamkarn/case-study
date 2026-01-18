@@ -104,7 +104,6 @@ class UserDetailsServiceImplTest {
     @Test
     @DisplayName("Should load teacher user with TEACHER role")
     void testLoadUserByUsername_TeacherRole() {
-        // Arrange
         User teacherUser = new User();
         teacherUser.setId((int) 3L);
         teacherUser.setUsername("teacher");
@@ -114,10 +113,8 @@ class UserDetailsServiceImplTest {
         
         when(userRepository.findByUsername("teacher")).thenReturn(Optional.of(teacherUser));
 
-        // Act
         UserDetails userDetails = userDetailsService.loadUserByUsername("teacher");
 
-        // Assert
         assertNotNull(userDetails);
         assertEquals("teacher", userDetails.getUsername());
         assertTrue(userDetails.getAuthorities().stream()
