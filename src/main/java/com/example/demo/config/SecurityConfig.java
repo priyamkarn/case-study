@@ -31,7 +31,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
                     .requestMatchers("/auth/login", "/auth/register").permitAll() // Allow both endpoints
-                    .requestMatchers("/admin/**").hasRole("ADMIN")
+                    .requestMatchers("/admin/**").hasRole("ADMIN").requestMatchers("/actuator/health", "/actuator/info","/actuator/metrics/**").permitAll()
                     .anyRequest().authenticated()
             )
             .authenticationProvider(authenticationProvider())

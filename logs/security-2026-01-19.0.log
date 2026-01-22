@@ -1,0 +1,23 @@
+2026-01-19 00:22:48.572 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-19 00:24:57.553 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/resttemplate
+2026-01-19 00:24:57.639 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-19 00:24:57.640 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-19 00:24:57.649 [http-nio-8080-exec-2] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /api/external/posts/resttemplate with authorities: [ROLE_ADMIN]
+2026-01-19 00:26:18.695 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/resttemplate/1
+2026-01-19 00:26:18.697 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-19 00:26:18.697 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-19 00:26:18.704 [http-nio-8080-exec-5] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /api/external/posts/resttemplate/1 with authorities: [ROLE_ADMIN]
+2026-01-19 00:26:29.617 [http-nio-8080-exec-6] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/resttemplate/user/1
+2026-01-19 00:26:29.618 [http-nio-8080-exec-6] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-19 00:26:29.618 [http-nio-8080-exec-6] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-19 00:26:29.632 [http-nio-8080-exec-6] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /api/external/posts/resttemplate/user/1 with authorities: [ROLE_ADMIN]
+2026-01-19 00:27:26.086 [http-nio-8080-exec-7] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/webclient
+2026-01-19 00:27:26.088 [http-nio-8080-exec-7] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-19 00:27:26.089 [http-nio-8080-exec-7] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-19 00:27:26.094 [http-nio-8080-exec-7] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /api/external/posts/webclient with authorities: [ROLE_ADMIN]
+2026-01-19 00:27:31.809 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/webclient
+2026-01-19 00:27:31.812 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Extracted username 'admin' from JWT token
+2026-01-19 00:27:31.812 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Attempting to authenticate user 'admin'
+2026-01-19 00:27:31.819 [http-nio-8080-exec-9] INFO  c.e.demo.security.JwtAuthFilter - User 'admin' authenticated successfully for request: GET /api/external/posts/webclient with authorities: [ROLE_ADMIN]
+2026-01-19 00:33:22.176 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /api/external/posts/webclient
+2026-01-19 00:33:22.177 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - No Bearer token found for request: GET /api/external/posts/webclient

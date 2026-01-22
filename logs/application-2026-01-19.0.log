@@ -1,0 +1,70 @@
+2026-01-19 00:22:44.511 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.6 with PID 14948 (C:\demo\target\classes started by priya in C:\demo)
+2026-01-19 00:22:44.517 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-01-19 00:22:44.518 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-19 00:22:45.260 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19 00:22:45.416 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 3 JPA repository interfaces.
+2026-01-19 00:22:46.102 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-19 00:22:46.121 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-19 00:22:46.123 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-19 00:22:46.123 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-19 00:22:46.206 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1636 ms
+2026-01-19 00:22:46.943 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19 00:22:46.983 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-19 00:22:47.165 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d770bcd
+2026-01-19 00:22:47.167 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-19 00:22:47.224 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-19 00:22:48.285 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19 00:22:48.368 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-19 00:22:48.680 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-19 00:22:48.681 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-01-19 00:22:48.862 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19 00:22:49.501 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-19 00:22:49.529 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-19 00:22:49.538 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 5.615 seconds (process running for 6.268)
+2026-01-19 00:24:57.533 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19 00:24:57.534 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-19 00:24:57.535 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-19 00:24:57.640 [http-nio-8080-exec-2] DEBUG c.e.d.service.UserDetailsServiceImpl - Attempting to load user by username: 'admin'
+2026-01-19 00:24:57.644 [http-nio-8080-exec-2] INFO  c.e.d.service.UserDetailsServiceImpl - User 'admin' loaded successfully with role: ADMIN
+2026-01-19 00:24:57.645 [http-nio-8080-exec-2] DEBUG c.e.d.service.UserDetailsServiceImpl - UserDetails object created for user 'admin' with authorities: [ROLE_ADMIN]
+2026-01-19 00:24:57.676 [http-nio-8080-exec-2] INFO  c.e.demo.service.ExternalApiService - Fetching all posts using RestTemplate
+2026-01-19 00:24:58.276 [http-nio-8080-exec-2] INFO  c.e.demo.service.ExternalApiService - Successfully fetched 100 posts
+2026-01-19 00:26:18.698 [http-nio-8080-exec-5] DEBUG c.e.d.service.UserDetailsServiceImpl - Attempting to load user by username: 'admin'
+2026-01-19 00:26:18.701 [http-nio-8080-exec-5] INFO  c.e.d.service.UserDetailsServiceImpl - User 'admin' loaded successfully with role: ADMIN
+2026-01-19 00:26:18.701 [http-nio-8080-exec-5] DEBUG c.e.d.service.UserDetailsServiceImpl - UserDetails object created for user 'admin' with authorities: [ROLE_ADMIN]
+2026-01-19 00:26:18.715 [http-nio-8080-exec-5] INFO  c.e.demo.service.ExternalApiService - Fetching post with ID: 1 using RestTemplate
+2026-01-19 00:26:18.802 [http-nio-8080-exec-5] INFO  c.e.demo.service.ExternalApiService - Successfully fetched post: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+2026-01-19 00:26:29.618 [http-nio-8080-exec-6] DEBUG c.e.d.service.UserDetailsServiceImpl - Attempting to load user by username: 'admin'
+2026-01-19 00:26:29.622 [http-nio-8080-exec-6] INFO  c.e.d.service.UserDetailsServiceImpl - User 'admin' loaded successfully with role: ADMIN
+2026-01-19 00:26:29.622 [http-nio-8080-exec-6] DEBUG c.e.d.service.UserDetailsServiceImpl - UserDetails object created for user 'admin' with authorities: [ROLE_ADMIN]
+2026-01-19 00:26:29.635 [http-nio-8080-exec-6] INFO  c.e.demo.service.ExternalApiService - Fetching posts for user ID: 1 using RestTemplate
+2026-01-19 00:26:29.716 [http-nio-8080-exec-6] INFO  c.e.demo.service.ExternalApiService - Successfully fetched 10 posts for user 1
+2026-01-19 00:27:26.089 [http-nio-8080-exec-7] DEBUG c.e.d.service.UserDetailsServiceImpl - Attempting to load user by username: 'admin'
+2026-01-19 00:27:26.092 [http-nio-8080-exec-7] INFO  c.e.d.service.UserDetailsServiceImpl - User 'admin' loaded successfully with role: ADMIN
+2026-01-19 00:27:26.092 [http-nio-8080-exec-7] DEBUG c.e.d.service.UserDetailsServiceImpl - UserDetails object created for user 'admin' with authorities: [ROLE_ADMIN]
+2026-01-19 00:27:26.096 [http-nio-8080-exec-7] INFO  c.e.demo.service.ExternalApiService - Fetching all posts using WebClient
+2026-01-19 00:27:26.803 [reactor-http-nio-2] INFO  c.e.demo.service.ExternalApiService - Successfully fetched all posts
+2026-01-19 00:27:31.812 [http-nio-8080-exec-9] DEBUG c.e.d.service.UserDetailsServiceImpl - Attempting to load user by username: 'admin'
+2026-01-19 00:27:31.815 [http-nio-8080-exec-9] INFO  c.e.d.service.UserDetailsServiceImpl - User 'admin' loaded successfully with role: ADMIN
+2026-01-19 00:27:31.815 [http-nio-8080-exec-9] DEBUG c.e.d.service.UserDetailsServiceImpl - UserDetails object created for user 'admin' with authorities: [ROLE_ADMIN]
+2026-01-19 00:27:31.820 [http-nio-8080-exec-9] INFO  c.e.demo.service.ExternalApiService - Fetching all posts using WebClient
+2026-01-19 00:27:31.851 [reactor-http-nio-2] INFO  c.e.demo.service.ExternalApiService - Successfully fetched all posts
+2026-01-19 00:55:18.683 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m920ms913µs200ns).
+2026-01-19 01:43:33.763 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s224ms647µs500ns).
+2026-01-19 02:12:22.928 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m18s730ms449µs200ns).
+2026-01-19 03:11:20.386 [http-nio-8080-exec-5] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x070x120x010x000x070x0e0x030x03IH0x1dp0x8d0x860xe0I0x88Lz0x8ce0xbb%0xbcZ0xfb0xa20xce}0x87D)0xd30x0b0x9b0xb0SriB ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:391)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-19 03:49:47.248 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m52s979ms990µs200ns).
+2026-01-19 05:47:20.949 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m3s595ms781µs500ns).
+2026-01-19 10:16:33.551 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h29m12s600ms734µs).

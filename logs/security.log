@@ -1,0 +1,24 @@
+2026-01-23 04:29:50.686 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-23 04:30:09.271 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/health
+2026-01-23 04:30:09.272 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - No Bearer token found for request: GET /actuator/health
+2026-01-23 04:32:07.815 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-23 04:32:34.517 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/health
+2026-01-23 04:32:34.517 [http-nio-8080-exec-1] DEBUG c.e.demo.security.JwtAuthFilter - No Bearer token found for request: GET /actuator/health
+2026-01-23 04:32:34.660 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /favicon.ico
+2026-01-23 04:32:34.660 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - No Bearer token found for request: GET /favicon.ico
+2026-01-23 04:33:12.014 [http-nio-8080-exec-4] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/health
+2026-01-23 04:33:12.094 [http-nio-8080-exec-4] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/health - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:03:12Z, a difference of 279606092 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:33:30.572 [http-nio-8080-exec-5] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/info
+2026-01-23 04:33:30.575 [http-nio-8080-exec-5] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/info - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:03:30Z, a difference of 279624575 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:33:33.667 [http-nio-8080-exec-6] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/info
+2026-01-23 04:33:33.670 [http-nio-8080-exec-6] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/info - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:03:33Z, a difference of 279627669 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:33:47.609 [http-nio-8080-exec-9] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/metrics
+2026-01-23 04:33:47.612 [http-nio-8080-exec-9] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/metrics - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:03:47Z, a difference of 279641611 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:34:57.581 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-23 04:35:05.696 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/metrics
+2026-01-23 04:35:05.775 [http-nio-8080-exec-2] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/metrics - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:05:05Z, a difference of 279719773 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:35:22.517 [http-nio-8080-exec-3] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/metrics/jvm.memory.used
+2026-01-23 04:35:22.521 [http-nio-8080-exec-3] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/metrics/jvm.memory.used - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:05:22Z, a difference of 279736521 milliseconds.  Allowed clock skew: 0 milliseconds.
+2026-01-23 04:35:52.092 [main] DEBUG c.e.demo.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2026-01-23 04:35:58.850 [http-nio-8080-exec-2] DEBUG c.e.demo.security.JwtAuthFilter - Processing request: GET /actuator/metrics/jvm.memory.used
+2026-01-23 04:35:58.930 [http-nio-8080-exec-2] WARN  c.e.demo.security.JwtAuthFilter - Expired JWT token for request: GET /actuator/metrics/jvm.memory.used - JWT expired at 2026-01-19T17:23:06Z. Current time: 2026-01-22T23:05:58Z, a difference of 279772929 milliseconds.  Allowed clock skew: 0 milliseconds.
